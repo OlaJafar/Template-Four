@@ -1,0 +1,134 @@
+/*Start of variables*/
+:root{
+    --second-color:#eeeeee;
+    --main-color:#0075ff;
+    --bg-color:#f1f5f9;
+    --hover-color:#0d69d5;
+    --main-transition:.5s;
+}
+/*End of variables*/
+
+/*Start of global styles*/
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: "Open Sans",sans-serif;
+    margin:0;
+}
+*:focus{
+    outline: none;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    margin:0;
+    padding: 0;
+}
+li{
+    margin:0;
+    padding:0;
+}
+span{
+    display: block;
+}
+.page{
+     min-height: 100vh;
+ }
+.active{
+    background-color: #f6f6f6;
+}
+/*End of global styles*/
+
+/*Start of sidebar*/
+.sidebar{
+    flex-basis: 18%;
+    box-shadow: 0 0 20px #EEEEEE;
+    
+}
+.sidebar h3::before{
+    content: '';
+    width:100px;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+.sidebar h3::after{
+    content: '';
+    width:10px;
+    height: 10px;
+    border-radius: 100%;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    border: 5px white solid;
+}
+.sidebar a{
+    transition: var(--main-transition);
+    margin: 4px auto;
+}
+.sidebar a:hover{
+    background-color: #F6F6F6;
+}
+@media (max-width: 767px) {
+    .sidebar{
+        width:auto;
+    }
+    .sidebar h3{
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+    .sidebar span{
+        display: none;
+    }
+    .sidebar h3::before{
+        display: none;
+    }
+    .sidebar h3::after{
+        display: none;
+    }
+}
+/*End of sidebar*/
+/*Start of content*/
+/*Start of fixed header*/
+.content{
+    flex-basis: 82%;
+}
+/*End of fixed header*/
+.fixed-header form{
+    border:1px #cccccc solid;
+    width:160px;
+    transition: var(--main-transition);
+}
+.fixed-header form:focus-within{
+    width:180px;
+}
+.fixed-header input{
+    width: 70%;
+}
+.fixed-header input::placeholder{
+    font-size: 12px;
+    color:#CCCCCC;
+}
+.fixed-header form i{
+    color:#CCCCCC;
+}
+.fixed-header .user-actions i::after{
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: red;
+    position: absolute;
+    top:0;
+    right:0;
+}
+/*End of fixed header*/

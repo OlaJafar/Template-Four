@@ -1,0 +1,82 @@
+/*Start Box*/
+.d-flex{
+    display: flex;
+}
+.align-center{
+    align-items: center;
+}
+.js-sp-btw{
+    justify-content: space-between;
+}
+/*End Box*/
+
+/*Start Padding And Margin*/
+.p-10{
+    padding: 10px;
+}
+.p-20{
+    padding:20px;
+}
+.m-20{
+    margin:20px;
+}
+.pl-10{
+    padding-left: 10px;
+}
+.mt-0{
+    margin-top: 0;
+}
+.mb-50{
+    margin-bottom: 50px;
+}
+.ml-10{
+    margin-left: 10px;
+}
+/*End Padding And Margin*/
+/*Start Size*/
+.w-20{
+    width:50px;
+}
+.h-20{
+    height: 50px;
+}
+/*End Size*/
+/*Start Color*/
+.bg-white{
+    background-color: white;
+}
+.c-black{
+    color:black;
+}
+/*End Color*/
+
+/*Start Font*/
+.txt-center{
+    text-align: center;
+}
+.fs-14{
+    font-size: 14px;
+}
+.fs-20{
+    font-size: 20px;
+}
+/*End Font*/
+
+/*Start Position*/
+.p-relative{
+    position: relative;
+}
+.p-absolute{
+    position: absolute;
+}
+/*End Position*/
+
+/*Start Border*/
+.rad-6{
+    border-radius: 6px;
+}
+.border-none{
+    border: none;
+}
+
+/*End Border*/
