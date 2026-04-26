@@ -36,6 +36,7 @@ span{
 }
 .page{
      min-height: 100vh;
+    background-color: #f1f5f9;
  }
 .active{
     background-color: #f6f6f6;
@@ -132,3 +133,21 @@ span{
     right:0;
 }
 /*End of fixed header*/
+/*Start of content*/
+h1::before,
+h1::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+}
+h1::before{
+    width: 12%;
+    background-color: white;
+}
+h1::after{
+    width:4%;
+    background-color: black;
+}
+/*End of content*/
